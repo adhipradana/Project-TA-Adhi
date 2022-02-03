@@ -1,0 +1,308 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layar-dalam {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.layar-penuh {
+    width: 100%;
+}
+
+section {
+    margin: 0 auto;
+    padding: 0;
+    display: absolute;
+}
+
+nav {
+    z-index: 200;
+    text-align: center;
+    position: fixed;
+    position: -webkit-sticky;
+    line-height: 80px;
+    width: 100%;
+    top: 0px;
+    margin: auto;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.897);
+}
+
+.logo img {
+    width: 5%;
+    float: left;
+    margin: 15px 20px;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 800;
+    float: left;
+    font-family: corier;
+    color: #121541;
+    text-decoration: none;
+}
+
+.menu {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #121541;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li:hover ul {
+    display: inline-block;
+}
+
+nav ul .program {
+    position: absolute;
+    background: linear-gradient(grey, white);
+    top: 60px;
+    right: 280px;
+    width: 160px;
+    line-height: 35px;
+    border-radius: 0px 20px 0px 20px;
+    font-size: 15px;
+}
+
+nav ul .program li a {
+    color: #213E3B;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background: linear-gradient(grey, white);
+    top: 60px;
+    right: 175px;
+    width: 10%;
+    line-height: 50px;
+    border-radius: 0px 20px 0px 20px;
+}
+
+nav ul ul li a {
+    color: #213E3B;
+}
+
+a.tbl-biru {
+    background: #213E3B;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: #FB7813;
+    text-decoration: none;
+}
+
+/*Header*/ /*Slider*/ 
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 70%;
+}
+
+@keyframes slider{
+
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left:-300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+#slider {
+    overflow: hidden;
+    margin: -170px;
+}
+
+#silder figure img {
+    width: 20%;
+    float: left;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slider;
+}
+
+header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+header .intro h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    padding: 0;
+    flex-wrap: wrap;
+    color: #121541;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+header .intro p {
+    margin-bottom: 20px;
+    margin-left: 130px;
+    width: 80%;
+    font-family: 'Comic sans ms';
+}
+
+/*Section*/
+
+.deskripsi {
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.deskripsi p {
+    font-family: 'comic sans ms';
+}
+
+.deskripsi-1 {
+    text-align: center;
+    width: 25%;
+    margin: 30px auto;
+}
+
+.deskripsi-1 h1 {
+    margin-bottom: 10px;
+    color: #2099E9;
+}
+
+.deskripsi-1 p {
+    font-family: 'comic sans ms';
+}
+
+/*footer*/
+
+#contact {
+    background: linear-gradient(white, grey);
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #213E3B;
+    width: 100%;
+    line-height: 50px;
+}
+
+.lokasi {
+    width: 20%;
+}
+
+.lokasi img {
+    width: 300px;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.548);
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    background: linear-gradient(grey, white);
+}

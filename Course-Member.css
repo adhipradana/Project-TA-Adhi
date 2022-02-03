@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-top: 50px;
+}
+
+.layar-dalam {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.layar-penuh {
+    width: 100%;
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    background: linear-gradient(40deg, cyan, rgb(76, 206, 76));
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.back-btn {
+    padding: 8px;
+    font-size: 30px;
+    color: white;
+}
+
+.back-btn:hover {
+    color: rgb(60, 132, 156);
+}
+
+.title {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px;
+    margin: auto;
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*Konten*/
+
+.title-2 {
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+.buku-list {
+    width: 80%;
+    margin-top: 30px;
+    left: 10%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-buku {
+    width: 23%;
+    height: 420px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: aliceblue;
+    text-align: center;
+}
+
+.list-buku h1 {
+    text-align: left;
+    margin: 10px 30px auto;
+}
+
+p {
+    text-align: left;
+    margin: 20px 30px auto;
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font: 25px;
+    color: #213E3B;
+}
+
+.list-buku img {
+    width: 80%;
+}
+
+.tbl-biru {
+    background: #0F4C75;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tbl-biru:hover {
+    background: #FB7813;
+    text-decoration: none;
+}
+
+/*Pengaturan Footer*/
+.wrapper {
+    width: 100%;
+}
+
+#contact {
+    background: linear-gradient(white, grey);
+    padding: 50px 0px 20px 0px;
+}
+
+.footer {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 25%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 25px;
+    color: #213E3B;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    background: linear-gradient(grey, white);
+}

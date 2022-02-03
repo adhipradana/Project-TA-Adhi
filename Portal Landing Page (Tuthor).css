@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+/*MenuBar*/
+
+.sidebar {
+    box-shadow: 2px 0px 25px black;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: #1b1b1b;
+    transition: left 0.4s ease;
+}
+
+.sidebar.show {
+    left: 0px;
+}
+
+.profile {
+    align-items: center;
+    text-align: center;
+}
+
+.profile .avatar {
+    margin: 10px 0px 0px 0px;
+    width: 100px;
+}
+
+.profile .text {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #1e1e1e;
+    letter-spacing: 1px;
+}
+
+.profile .user {
+    color: grey;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    background: #1b1b1b;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li {
+    line-height: 60px;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.1);
+}
+
+nav ul li:last-child {
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.05);
+}
+
+nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+nav ul li.active a {
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+}
+
+nav ul ul {
+    position: static;
+    display: none;
+}
+
+nav ul .feat-show.show {
+    display: block;
+}
+
+nav ul .serv-show.show1 {
+    display: block;
+}
+
+nav ul ul li {
+    line-height: 42px;
+    border-bottom: none;
+}
+
+nav ul ul li a {
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 70px;
+}
+
+nav ul li.active ul li a {
+    color: #e6e6e6;
+    background: #1b1b1b;
+    border-left-color: transparent;
+}
+
+nav ul ul li a:hover {
+    color: cyan!important;
+    background: #1e1e1e!important;
+}
+
+nav ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+
+nav ul li a span.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+/*Cover*/
+/*NaviBarBtn*/
+
+header {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+header .cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+}
+
+.layar-dalam {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+
+.layar-dalam.click {
+    left: 260px;
+}
+
+.layar-dalam.click span::before {
+    content: '\f00d';
+}
+
+.btn {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn span {
+    color: black;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.logo {
+    margin-left: 80px;
+    display: flex;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo h1 {
+    background: linear-gradient(30deg, cyan, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform-origin: right;
+    background-size: 500%;
+    color: transparent;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    animation: Ihya 10s linear infinite;
+}
+
+@keyframes Ihya {
+    0% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+/*Search Bar*/
+
+.txt .title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+}
+
+.search-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box:hover > .search-txt {
+    width: 440px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn i {
+    background: cyan;
+    color: white;
+} 
+
+.search-btn i {
+    color: #fff;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+input {
+    text-align: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding-left: 0;
+    color: #2f3640;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+}
+
+
+/*Menu Bar*/
+
+.menubar {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    width: 60%;
+    margin-top: 50px;
+}
+
+.kiblat {
+    padding: 8px;
+}
+
+.kiblat-btn i {
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.map {
+    padding: 8px;
+}
+
+.map-btn i {
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.report {
+    padding: 8px;
+}
+
+.report-btn i {
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.history-odr {
+    padding: 8px;
+}
+
+.history-odr-btn i {
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.chat {
+    padding: 8px;
+}
+
+.chat-btn i {
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.progress {
+    padding: 8px;
+}
+
+.progress-btn i {
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.games {
+    padding: 8px;
+}
+
+.games-btn i {
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+i:hover {
+    background: white;
+    color: cyan;
+}
+
+/*Waktu Digital*/
+
+.time {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 300px;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.hms {
+    font-size: 30pt;
+    font-weight: 200;
+    text-shadow: 0px 2px 10px black;
+}
+
+.ampm {
+    font-size: 15pt;
+    text-shadow: 0px 2px 10px black;
+}
+
+.date {
+    font-size: 10pt;
+    text-shadow: 0px 2px 10px black;
+}

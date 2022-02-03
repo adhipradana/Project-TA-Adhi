@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ihya Maps</title>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv81hpNRhxb2Htam-Daj5UJIq4lOitQPA&callback=initMap"></script>
+    <script src="Kiblat.js" defer></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet" href="MapPage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!---Header--->
+        <section>
+            <div class="header">
+                <div class="back-btn">
+                    <a href="Portal Landing Page (Member).html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+                <div class="logo">
+                    <img src="img/logo crop.png">
+                    <a href="#" class="Judul">Ihya Maps</a>
+                </div>
+                <div class="input-lokasi">
+                    <div class="i">
+                        <i class="fas fa-location-arrow"></i>
+                    </div>
+                    <div>
+                        <input type="text" class="input" placeholder="Your Position">
+                    </div>
+                </div>
+                <div class="input-tujuan">
+                    <div class="i">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+                    <div>
+                        <input type="text" class="input" placeholder="Your Destination">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---Map--->
+        <section>
+            <div id="googleMap"></div>
+        </section>
+    </header>
+</body>
+</html>

@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+
+.layar-dalam {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.layar-penuh {
+    width: 100%;
+}
+
+section {
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    background: linear-gradient(40deg, cyan, rgb(76, 206, 76));
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px;
+    margin: auto;
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.back-btn {
+    padding: 8px;
+    font-size: 30px;
+    color: white;
+}
+
+.back-btn:hover {
+    color: rgb(60, 132, 156);
+}
+
+/*Konten*/
+
+.backgrnd {
+    background: white;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.image {
+    margin: 0 auto;
+    margin-right: 20px;
+    padding: 50px;
+}
+
+.tengah {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding: 0;
+    width: 40%;
+}
+
+.tengah .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #213E3B;
+    margin: 30px auto;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #213E3B;
+    width: 100%;
+    line-height: 50px;
+}
+
+.judul {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.judul h1 {
+    font-size: 40px;
+    font-family: 'comic sans ms';
+}
+
+.judul p {
+    font-family: 'comic sans ms';
+}
+
+.backgrnd-2 {
+    width: 50%;
+    background-color: white;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.backgrnd-2 h1 {
+    margin: 40px 40px 20px;
+    padding: 0;
+}
+
+.isi {
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: lightgrey;
+}
+
+.isi .a {
+    padding: 0px 40px 0px 0px;
+    margin-bottom: 10px;
+}
+
+.isi .pengenalan {
+    padding-left: 20px;
+    padding-right: 223px;
+}
+
+.isi .pengenalan-2 {
+    padding-left: 20px;
+    padding-right: 160px;
+}
+
+.isi .b {
+    padding-left: 5px;
+}
+
+.tombol {
+    background-color: #FB7813;
+    height: 40px;
+    width: 100px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    margin-top: 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tombol:hover {
+    background: #213E3B;
+    text-decoration: none;
+}
+
+/*Footer*/
+#contact {
+    background: linear-gradient(white, grey);
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #213E3B;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    background: linear-gradient(grey, white);
+}

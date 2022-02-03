@@ -1,0 +1,310 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layar-dalam {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.layar-penuh {
+    width: 100%;
+}
+
+section {
+    margin: 0 auto;
+    padding: 0;
+    display: absolute;
+}
+
+nav {
+    z-index: 200;
+    text-align: center;
+    position: fixed;
+    position: -webkit-sticky;
+    line-height: 80px;
+    width: 100%;
+    top: 0px;
+    margin: auto;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.897);
+}
+
+.logo img {
+    width: 5%;
+    float: left;
+    margin: 15px 20px;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 800;
+    float: left;
+    font-family: corier;
+    color: #121541;
+    text-decoration: none;
+}
+
+.menu {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #121541;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li:hover ul {
+    display: inline-block;
+}
+
+nav ul .program {
+    position: absolute;
+    background: linear-gradient(grey, white);
+    top: 60px;
+    right: 280px;
+    width: 160px;
+    line-height: 35px;
+    border-radius: 0px 20px 0px 20px;
+    font-size: 15px;
+}
+
+nav ul .program li a {
+    color: #213E3B;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background: linear-gradient(grey, white);
+    top: 60px;
+    right: 175px;
+    width: 10%;
+    line-height: 50px;
+    border-radius: 0px 20px 0px 20px;
+}
+
+nav ul ul li a {
+    color: #213E3B;
+}
+
+a.tbl-biru {
+    background: #213E3B;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: #FB7813;
+    text-decoration: none;
+}
+
+/* Section */ /* Judul */ /* Program */
+
+.Page-1 {
+    background-image: url(img/ornamen-2-removebg-preview.png);
+    background-repeat: space;
+    background-size: 100%;
+    background-position: center;
+    margin-top: 90px;
+}
+
+.tengah {
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+
+.judul {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.judul h1 {
+    font-size: 30px;
+    color: #121541;
+}
+
+.box {
+    background: transparent;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.isi-konten {
+    margin: 0 auto;
+    width: 20%;
+    border: 1px #fff solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.548);
+}
+
+.isi-konten img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 15px;
+}
+
+.isi-konten h1 {
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 70%;
+}
+
+.isi-konten p {
+    margin-bottom: 5px;
+    font-family: 'comic sans ms';
+    color: rgb(75, 72, 72);
+}
+
+.progress1 {
+    background-color: gray;
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.progress1 h1 {
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 7px;
+}
+
+.progress {
+    background-color: aqua;
+    width: 60%;
+    height: 13px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.donasi {
+    background: aqua;
+    padding: 5px 40px 5px 40px;
+    border-radius: 0px 0px 12px 12px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.donasi:hover {
+    background: green;
+}
+
+/* Jika Donasi Closed */
+
+.progress2 {
+    background-color: gray;
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.progress2 h1 {
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 7px;
+}
+
+.progressClosed {
+    background-color: aqua;
+    width: 100%;
+    height: 13px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.donasi1 {
+    background: grey;
+    padding: 5px 90px 5px 90px;
+    border-radius: 0px 0px 12px 12px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+/*footer*/
+
+#contact {
+    background: linear-gradient(white, grey);
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #213E3B;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    background: linear-gradient(grey, white);
+}

@@ -1,0 +1,496 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layar-dalam {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.layar-penuh {
+    width: 100%;
+}
+
+section {
+    margin: 0 auto;
+    padding: 0;
+    display: absolute;
+}
+
+nav {
+    z-index: 200;
+    text-align: center;
+    position: fixed;
+    position: -webkit-sticky;
+    line-height: 80px;
+    width: 100%;
+    top: 0px;
+    margin: auto;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.897);
+}
+
+.logo img {
+    width: 5%;
+    float: left;
+    margin: 15px 20px;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 800;
+    float: left;
+    font-family: corier;
+    color: #121541;
+    text-decoration: none;
+}
+
+.menu {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #121541;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li:hover ul {
+    display: inline-block;
+}
+
+nav ul .program {
+    position: absolute;
+    background: linear-gradient(grey, white);
+    top: 60px;
+    right: 280px;
+    width: 160px;
+    line-height: 35px;
+    border-radius: 0px 20px 0px 20px;
+    font-size: 15px;
+}
+
+nav ul .program li a {
+    color: #213E3B;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background: linear-gradient(grey, white);
+    top: 60px;
+    right: 175px;
+    width: 10%;
+    line-height: 50px;
+    border-radius: 0px 20px 0px 20px;
+}
+
+nav ul ul li a {
+    color: #213E3B;
+}
+
+a.tbl-biru {
+    background: #213E3B;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: #FB7813;
+    text-decoration: none;
+}
+
+/* Pengaturan Header */
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    z-index: -2;
+}
+
+header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+header .intro h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    padding: 0;
+    flex-wrap: wrap;
+    color: #121541;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+header .intro p {
+    margin-bottom: 20px;
+    margin-left: 130px;
+    width: 80%;
+    font-family: 'Comic sans ms';
+}
+
+.tombol {
+    background-color: #FB7813;
+    height: 40px;
+    width: 200px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.tombol:hover {
+    background: #213E3B;
+    text-decoration: none;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 70%;
+}
+
+/* Deskripsi */
+
+.baris {
+    display: flex;
+    width: 80%;
+    background: #fff;
+    padding: 10px;
+    border: 2px skyblue solid;
+    border-radius: 30px;
+    justify-content: center;
+    z-index: 100;
+    position: relative;
+    position: -webkit-sticky;
+    margin: auto;
+    margin-top: -50px;
+    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+}
+
+.baris .deskripsi {
+    display: flex;
+}
+
+.baris .deskripsi .flex {
+    display: flex;
+    margin: 10px 100px;
+}
+
+.baris .deskripsi .flex img {
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+}
+
+.deskripsi-1 {
+    margin-left: 25px;
+    margin: auto;
+    padding: 20px;
+}
+
+.deskripsi-1 li {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.deskripsi-1 li h1 {
+    color: #2099E9; 
+}
+
+.deskripsi-1 li p {
+    color: #2099E9;
+    font-family: 'Comic sans ms';
+}
+
+.deskripsi-1 li a {
+    color: #2099E9;
+    text-decoration: none;
+    background: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px #2099e9 solid;
+}
+
+.deskripsi-1 li a:hover{
+    color: #fff;
+    background: #2099E9;
+}
+
+/* Section */ /* Judul */ /* Program */
+
+.Page-1 {
+    background-image: url(img/ornamen-2-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.tengah {
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+
+.judul {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.judul h1 {
+    font-size: 30px;
+    color: #121541;
+}
+
+.box {
+    background: transparent;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.isi-konten {
+    margin: 0 auto;
+    width: 20%;
+    border: 1px #fff solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.548);
+}
+
+.isi-konten img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 15px;
+}
+
+.isi-konten h1 {
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 70%;
+}
+
+.isi-konten p {
+    margin-bottom: 5px;
+    font-family: 'comic sans ms';
+    color: rgb(75, 72, 72);
+}
+
+.progress1 {
+    background-color: gray;
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.progress1 h1 {
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 7px;
+}
+
+.progress {
+    background-color: aqua;
+    width: 60%;
+    height: 13px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.donasi {
+    background: aqua;
+    padding: 5px 40px 5px 40px;
+    border-radius: 0px 0px 12px 12px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.donasi:hover {
+    background: green;
+}
+
+/* Jika Donasi Closed */
+
+.progress2 {
+    background-color: gray;
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.progress2 h1 {
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 7px;
+}
+
+.progressClosed {
+    background-color: aqua;
+    width: 100%;
+    height: 13px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.donasi1 {
+    background: grey;
+    padding: 5px 90px 5px 90px;
+    border-radius: 0px 0px 12px 12px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.tbl-progr {
+    background-color: #FB7813;
+    height: 40px;
+    width: 200px;
+    margin-top: 15px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.tbl-progr:hover {
+    background: #213E3B;
+    text-decoration: none;
+}
+
+.border {
+    width: 80%;
+    height: 0;
+    border-bottom: 1px solid lightblue;
+    margin: 50px auto;
+}
+
+/*Deskripsi-2*/
+
+.deskripsi-2 {
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.desk {
+    width: 20%;
+    margin: auto;
+}
+
+.desk img {
+    width: 100px;
+    margin: 30px auto;
+}
+
+/*footer*/
+
+#contact {
+    background: linear-gradient(white, grey);
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #213E3B;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    background: linear-gradient(grey, white);
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Source Code Tab.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">Masuk</div>
+            <div class="title daftar">Daftar</div>
+        </div>
+        <div class="form-container">
+            <div class="silde-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="daftar">
+                <label for="login" class="slide login">Masuk</label>
+                <label for="daftar" class="slide daftar">Daftar</label>
+                <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+                <form action="#" class="login">
+                    <div class="field">
+                        <input type="text" name="" placeholder="Alamat Email" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" name="" placeholder="Password" required>
+                    </div>
+                    <div class="pass-link">
+                        <a href="#">Lupa Password</a>
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" name="" value="login">
+                    </div>
+                    <div class="daftar-link">Belum Daftar?<a href="">Daftar Sekarang</a></div>
+                </form>
+                <form action="#" class="daftar">
+                    <div class="field">
+                        <input type="text" name="" placeholder="Alamat Email" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" name="" placeholder="Password" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" name="" placeholder="Konfirmasi Password" required>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" name="" value="daftar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const daftarBtn = dcoument.querySelector("label.daftar");
+        const daftarLink = document.querySelector("form .daftar-link a");
+        daftarBtn.onclick = (()=>{
+            loginForm.style.marginleft = "-50%";
+            loginText.style.marginleft = "-50%";
+        });
+        loginBtn.onclick = (()=>{
+            loginForm.style.marginleft = "0%";
+            loginText.style.marginleft = "0%";
+        });
+        daftarLink.onclick = (()=>{
+            daftarBtn.click();
+            return false;
+        });
+    </script>
+</body>
+</html>
