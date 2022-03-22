@@ -102,10 +102,6 @@ nav ul ul {
     display: none;
 }
 
-nav ul .feat-show.show {
-    display: block;
-}
-
 nav ul .serv-show.show1 {
     display: block;
 }
@@ -145,6 +141,31 @@ nav ul li a span.rotate {
     transform: translateY(-50%) rotate(-180deg);
 }
 
+.chg-acc {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.chg-acc a {
+    text-decoration: none;
+}
+
+.chg-acc p {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chg-acc p:hover {
+    color: cyan;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    font-size: 7px;
+    margin-top: 160px;
+}  
+  
 /*Cover*/
 /*NaviBarBtn*/
 
@@ -314,7 +335,25 @@ input {
     display: flex;
     position: absolute;
     width: 60%;
-    margin-top: 50px;
+    margin-top: 35px;
+}
+
+.quran {
+    padding: 8px;
+}
+
+.quran-btn i {
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .kiblat {
@@ -353,60 +392,6 @@ input {
     text-decoration: none;
 }
 
-.report {
-    padding: 8px;
-}
-
-.report-btn i {
-    font-size: 40px;
-    color: #fff;
-    float: right;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: cyan;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.history-odr {
-    padding: 8px;
-}
-
-.history-odr-btn i {
-    font-size: 40px;
-    color: #fff;
-    float: right;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: cyan;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.chat {
-    padding: 8px;
-}
-
-.chat-btn i {
-    font-size: 40px;
-    color: #fff;
-    float: right;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: cyan;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
 .progress {
     padding: 8px;
 }
@@ -425,11 +410,11 @@ input {
     text-decoration: none;
 }
 
-.games {
+.history-odr {
     padding: 8px;
 }
 
-.games-btn i {
+.history-odr-btn i {
     font-size: 40px;
     color: #fff;
     float: right;
@@ -474,24 +459,4 @@ i:hover {
 .date {
     font-size: 10pt;
     text-shadow: 0px 2px 10px black;
-}
-
-/*Pengaturan footer*/
-
-footer {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    top: 100%;
-}
-
-.layar-penuh {
-    width: 100%;
-}
-
-#copyright {
-    text-align: center;
-    width: 100%;
-    font-size: 15px;
-    background: linear-gradient(black, white);
 }

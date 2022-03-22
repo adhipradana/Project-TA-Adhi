@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ihya | Tabungan</title>
+    <link rel="stylesheet" href="Invest-User-Page (Tabungan) 2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+<body>
+    <img class="cover" src="img/coverimg.jfif">
+    <div class="overlay"></div>
+    <!---Navigasi--->
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>
+            <div class="profile">
+                <img src="img/Profilepict.png" class="avatar">
+                <p class="user">Member</p>
+                <div class="text">Nama User</div>
+            </div>
+        </header>
+        <ul>
+            <li>
+                <a href="Invest-User-Page.html"><i class="fas fa-qrcode"></i>Overview</a>
+            </li>
+            <li>
+                <a href="Invest-User-Page (Investasi).html"><i class="fas fa-money-check"></i>Investasi</a>
+            </li>
+        </ul>
+
+        <div id="copyright">
+            <h1>&copy; 2021 <b>Adhi Pradana</b> All Right   Reserved.</h1>
+        </div>
+    </div>
+
+    <!---Konten--->
+    <main>
+        <section>
+            <div class="header">
+                <div class="logo">
+                    <img src="img/logo crop.png">
+                    <div class="title">
+                        <h1>Selamat Datang!!</h1>
+                        <p>Anda sedang berada di halaman pembukaan rekening baru.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="form">
+                <div class="kolom">
+                    <h1>Data Diri</h1>
+                    <form action="#" method="POST">
+                        <div class="input">
+                            <p>Masukkan Nama Lengkap
+                                <span class="text-red">*</span>
+                            </p>
+                            <input type="text" placeholder="Masukkan Nama">
+                        </div>
+                        <div class="input">
+                            <p>Tempat / Tanggal Lahir
+                                <span class="text-red">*</span>
+                            </p>
+                            <input type="text" placeholder="Masukkan Nama">
+                        </div>
+                        <div class="input">
+                            <p>Alamat
+                                <span class="text-red">*</span>
+                            </p>
+                            <textarea name="" id="" cols="30" rows="5"></textarea>
+                        </div>
+                        <div class="input">
+                            <p>Email Aktif
+                                <span class="text-red">*</span>
+                            </p>
+                            <input type="text" placeholder="Masukkan Email">
+                        </div>
+                        <div class="input">
+                            <p>Username Anda
+                                <span class="text-red">*</span>
+                            </p>
+                            <input type="text" placeholder="Masukkan Username">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="kolom">
+                    <h1>Pembukaan Tabungan</h1>
+                    <form action="#" method="POST">
+                        <div class="input">
+                            <p>Pilih Tujuan Menabung
+                                <span class="text-red">*</span>
+                            </p>
+                            <select>
+                                <option value="-Silahkan Pilih-">-Silahkan Pilih-</option>
+                                <option value="">Pendidikan</option>
+                                <option value="">Pasca Sarjana</option>
+                                <option value="">Dana Pensiun</option>
+                                <option value="">Trip Wisata</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <p>Pilih Metode Menabung
+                                <span class="text-red">*</span>
+                            </p>
+                            <select>
+                                <option value="-Silahkan Pilih-">-Silahkan Pilih-</option>
+                                <option value="">Menabung dengan Bujet</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <p>Buat Nama Tabungan
+                                <span class="text-red">*</span>
+                            </p>
+                            <input type="text" placeholder="Buat Nama">
+                        </div>
+                        <div class="input2">
+                            <h1>Tentukan Target & Waktu Periode</h1>
+                            <div class="input3">
+                                <p>Target
+                                    <span class="text-red">*</span>
+                                </p>
+                                Rp.<input type="number" placeholder="Minimal Rp. 100.000">
+                            </div>
+                            <div class="input3">
+                                <p>Periode Menabung
+                                    <span class="text-red">*</span>
+                                </p>
+                                <input type="number" class= "tahun" placeholder="1">Tahun
+                            </div>
+                            <div class="input3">
+                                <p>Tanggal Autodebit
+                                    <span class="text-red">*</span>
+                                </p>
+                                <input type="date">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="#popup"><button class="confirm">Konfirmasi Pembukaan Tabungan</button></a>
+        </section>
+    </main>
+
+    <!---POPUP ALERT--->
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="button">
+                <a href="#popup2" class="popup__close">Ya</a>
+                <a href="#" class="popup__close2">Tidak</a>
+            </div>
+            <div class="popup__header">
+                <h1>Mohon Periksa Kembali Data Anda</h1>
+                <p>Tekan 'Ya' maka proses sudah tidak bisa diulangi kembali.</p>
+            </div>
+        </div>
+    </div>
+
+    <!---POPUP ALERT 2--->
+    <div class="popup" id="popup2">
+        <div class="popup__content2">
+            <a href="#popup3" class="popup__close3">Lihat Hasil</a>
+            <div class="popup__header">
+                <p>Selamat, Proses Pembukaan Tabungan Anda Berhasil !!!</p>
+            </div>
+        </div>
+    </div>
+
+    <!---POPUP HASIL--->
+    <div class="popup" id="popup3">
+        <div class="popup__content3">
+            <a href="Invest-User-Page (Tabungan).html" class="popup__close4">&times;</a>
+            <div class="popup__header2">
+                <div class="satu">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>Dana Lulus Kuliah</h1>
+                    <p>1234567891011</p>
+                    <img src="img/586091155.jpg">
+                    <div class="date">
+                        <div class="date1">
+                            <h1>9</h1>
+                            <p>Bulan</p>
+                        </div>
+                        <div class="date1">
+                            <h1>1</h1>
+                            <p>Hari</p>
+                        </div>
+                    </div>
+                    <h1>Rp. 3.500.000</h1>
+                    <p>Saldo yang sudah di debit</p>
+                </div>
+                <div class="deskrip">
+                    <h1>Detail Autodebit</h1>
+                    <div class="nominal">
+                        <div class="angka">
+                            <p>Nominal</p>
+                            <h1>Rp. 500.000</h1>
+                        </div>
+                        <div class="angka">
+                            <p>Tanggal</p>
+                            <h1>Tiap Tanggal 28</h1>
+                        </div>
+                    </div>
+                    <div class="scrip">
+                        <p>Periode Menabung / Deposit</p>
+                        <h1>1 Tahun</h1>
+                    </div>
+                    <div class="cair">
+                        <h1>Tanggal Pencairan :</h1>
+                        <p>17 Des 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

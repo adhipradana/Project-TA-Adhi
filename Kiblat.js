@@ -4,7 +4,7 @@ let poly, geodesicPoly;
 function initMap() {
   const map = new google.maps.Map(document.getElementById("googleMap"), {
     zoom: 12,
-    center: { lat: 34, lng: -40.605 },
+    center: new google.maps.LatLng ( 34, -40.605 ),
   });
 
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(
@@ -13,12 +13,12 @@ function initMap() {
   marker1 = new google.maps.Marker({
     map,
     draggable: true,
-    position: { lat: -6.905977, lng: 107.613144 },
+    position: {  lat: 21.3891, lng: 39.8579 },
   });
   marker2 = new google.maps.Marker({
     map,
     draggable: true,
-    position: { lat: 21.3891, lng: 39.8579 },
+    position: { lat: -6.905977, lng: 107.613144 },
   });
 
   const bounds = new google.maps.LatLngBounds(

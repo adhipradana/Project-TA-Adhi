@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    z-index: -1;
+}
+
+/* Menubar */
+
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  background: #1b1b1b;
+  transition: all .5s ease;
+  top: 0;
+  z-index: 10;
+}
+
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 30px;
+  text-align: center;
+  background: #1b1b1b;
+  user-select: none;
+}
+
+.profile {
+    align-items: center;
+    text-align: center;
+}
+
+.profile .avatar {
+    margin-top: 40px;
+    width: 100px;
+}
+
+.profile .text {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #1e1e1e;
+    letter-spacing: 1px;
+}
+
+.profile .user {
+    color: grey;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+
+ul li:hover a {
+  padding-left: 50px;
+  color: cyan;
+}
+
+.sidebar ul a i {
+  margin-right: 16px;
+}
+
+#copyright {
+  text-align: center;
+  width: 100%;
+  font-size: 5px;
+  margin-top: 60px;
+  color: #fff;
+}
+
+#check{
+  display: none;
+}
+
+label #btn {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+label #cancel {
+    position: fixed;
+    background: #1b1b1b;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label #btn { 
+  left: 250px;
+  top: 25px;
+  font-size: 35px;
+  color: black;
+  padding: 6px 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s;
+}
+
+label #cancel {
+  z-index: 1111;
+  left: 195px;
+  top: 17px;
+  font-size: 30px;
+  color: #fff;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+  left: -250px;
+}
+
+#check:checked ~ label #btn {
+  left: 40px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#check:checked ~ label #cancel {
+  left: -195px;
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    width: 70%;
+    height: 50px;
+    margin: 25px auto;
+}
+
+.logo {
+    display: flex;
+    border-right: 2px solid white;
+    padding-right: 20px;
+}
+  
+.logo img {
+    width: 50px;
+}
+  
+.logo h1 {
+    font-size: 30px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.search-box {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box:hover > .search-txt {
+    width: 440px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn i {
+    background: linear-gradient(90deg, white, rgb(130, 238, 130));
+    color: white;
+} 
+
+.search-btn i {
+    color: #fff;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, white, rgb(130, 238, 130));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+input {
+    text-align: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding-left: 0;
+    color: #2f3640;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+}
+
+/* Chart */
+
+.chart {
+    position: fixed;
+    right: 0;
+    top: 85%;
+    margin-right: 40px;
+}
+
+.chart a {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.chart a:hover {
+    color: rgb(122, 236, 221);
+}
+
+/* Konten */
+
+/* Section Al-Quran*/
+
+.cover-1 {
+    width: 80%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    background: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cover-1 img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.cover-1 .subtitle {
+    overflow: hidden;
+    display: flex;
+}
+
+.cover-1 .subtitle li {
+    overflow: hidden;
+}
+
+.cover-1 .subtitle li p {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.cover-1 .subtitle img {
+    width: 30px;
+    margin-top: 15px;
+}
+
+.cover-1 h1 {
+    font-family: 'Comic Sans ms';
+    font-size: 40px;
+}
+
+.cover-1 .deskripsi {
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.cover-1 .deskripsi .deskripsi-2 {
+    display: flex;
+}
+
+.cover-1 .deskripsi .deskripsi-2 p {
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.cover-1 .deskripsi h1 {
+    font-size: 50px;
+    font-family: 'comic sans ms';
+    margin-bottom: 15px;
+}
+
+.cover-1 .deskripsi p {
+    font-family: 'comic sans ms';
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.cover-1 .deskripsi .harga {
+    width: bold;
+    font-size: 20px;
+    font-family: 'comic sans ms';
+}
+
+.cover-1 .deskripsi a {
+    background: lightseagreen;
+    border-radius: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+
+.cover-1 .deskripsi a:hover {
+    background: linear-gradient(aqua, green, rgb(70, 70, 230));
+    text-decoration: none;
+}
+
+.cover-1 .deskripsi .rating {
+    margin-top: 20px;
+    width: 30%;
+    height: 10%;
+}
+
+.Category {
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.Category a {
+    color: #ffffff;
+}
+
+.Category a:hover {
+    color: skyblue;
+}
+
+/*Border*/
+
+.border {
+    border-top: 8px dotted #ffffff;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/*Section Food*/
+

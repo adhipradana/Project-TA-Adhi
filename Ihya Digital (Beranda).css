@@ -151,6 +151,7 @@ a.tbl-biru:hover {
     padding: 10px 20px;
     border-radius: 200px;
     font-size: 18px;
+    color: black;
 }
 
 .search_wrap .search_box .btn {

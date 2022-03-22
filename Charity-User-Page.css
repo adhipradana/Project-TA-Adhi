@@ -108,6 +108,7 @@ section {
 
 ul li:hover a {
   padding-left: 50px;
+  color: cyan;
 }
 
 .sidebar ul a i {
@@ -119,6 +120,7 @@ ul li:hover a {
   width: 100%;
   font-size: 5px;
   margin-top: 130px;
+  color: #fff;
 }
 
 #check{
@@ -200,24 +202,56 @@ label #cancel {
     margin-left: 20px;
 }
 
-.search-list {
-    margin-top: 12px;
-    margin-left: 10px;
+.search-box {
+    position: absolute;
+    top: 3%;
+    left: 37%;
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
 }
 
-.search-list .history {
-    display: flex;
+.search-box:hover > .search-txt {
+    width: 440px;
+    padding: 0 6px;
 }
 
-.search-list .history .list {
-    margin-left: 20px;
-    background: linear-gradient(90deg, rgb(236, 236, 236), rgb(130, 238, 130));
-    padding: 5px;
-    border-radius: 20px;
-    border: 1px solid #fff;
+.search-box:hover > .search-btn i {
+    background: linear-gradient(90deg, white, rgb(130, 238, 130));
     color: white;
+} 
+
+.search-btn i {
+    color: #fff;
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, white, rgb(130, 238, 130));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
 }
 
+input {
+    text-align: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding-left: 0;
+    color: #2f3640;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+}
 
 /*Konten*/
 

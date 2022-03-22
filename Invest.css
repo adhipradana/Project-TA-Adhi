@@ -380,8 +380,10 @@ div .kolom p {
 }
 
 .box-1 img {
-    width: 200px;
-    margin-bottom: 13px;
+    width: 150px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 .box-1 .tombol2 {
@@ -557,70 +559,3 @@ h3 {
     background: linear-gradient(grey, white);
 }
 
-/*@media screen and (max-width: 991.98px) {
-    .layar-dalam {
-        width: 90%;
-    }
-
-    .logo img {
-        display: contents;
-    }
-
-    .logo a {
-        display: inline;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav .logo .tombol-menu {
-        display: flex;
-    }
-
-    nav .menu {
-        width: 100%;
-        margin: 0;
-        display: none;
-    }
-
-    nav .menu.active {
-        display: flex;
-    }
-
-    nav .menu ul {
-        text-align: center;
-        margin: auto;
-        line-height: 60px;
-    }
-
-    nav .menu ul li {
-        display: inline-block;
-        float: none;
-        width:100%;
-        border-bottom:1px solid #333333;
-    }
-
-    nav .menu ul ul {
-        text-align: center;
-        margin: auto;
-        line-height: 45px;
-        width: 15%;
-        margin: 290px auto;
-    }
-
-    nav .menu ul ul li {
-        display: inline-block;
-    }
-
-    section {
-        display: block;
-    }
-
-    section img {
-        display: block;
-        margin: auto;
-    }
-
-    #contact {
-        margin: auto;
-    }
-}*/

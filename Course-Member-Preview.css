@@ -61,7 +61,9 @@ section {
 .backgrnd {
     background: white;
     width: 100%;
+    line-height: 100%;
     margin: 0 auto;
+    padding: 15px;
     display: flex;
 }
 
@@ -73,7 +75,7 @@ section {
 
 .tengah {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 20px;
     padding: 0;
     width: 40%;

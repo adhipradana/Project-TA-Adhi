@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ihya Store</title>
     <link rel="stylesheet" href="Store (Pakaian2).css">
-    <script src="Store (Pakaian2).js" defer></script>
 </head>
 <body>
     <!---navigasi menu--->
@@ -29,13 +28,13 @@
                             <li><a href="Store (Al-Qur'an).html">Al-Qur'an</a></li>
                             <li><a href="Store (Buku).html">Buku</a></li>
                             <li><a href="Store (Pakaian).html">Pakaian</a></li>
-                            <li><a href="#">Makanan</a></li>
+                            <li><a href="Store (Menu).html">Makanan</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Features</a>
                         <ul class="fitur">
                             <li><a href="Course (Beranda).html">Course</a></li>
-                            <li><a href="#">Charity</a></li>
+                            <li><a href="Charity.html">Charity</a></li>
                             <li><a href="Invest.html">Invest</a></li>
                         </ul>
                     </li>
@@ -223,20 +222,62 @@
         </section>
     </main>
 
-    <!---Tombol menu--->
-    <div class="tbl-menu">
-        <a href="#" onclick='bukapopup()';><img src="img/Menu-Baju.png"></a>
-    </div>
-
-    <!---Tombol Keranjang--->
+    <!---Keranjang--->
     <div class="Keranjang">
-        <a href="#" onclick='bukapopup()';><img src="img/basket.png"></a>
+        <a href="#popup"><img src="img/Menu-Baju.png"></a>
     </div>
 
-    <div id="parentpopup">
-        <div class="closepopup"><a href="#" onclick='tutuppopup()';> X </a></div>
-        <div class="childpopup">
-        ini adalah content popup
+    <!---POPUP--->
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <a href="#" class="popup__close">&times;</a>
+            <div class="popup__header">
+                <h1>Belanjaan Kamu!</h1>
+                <h2>Tolong check kembali belanjaan anda sebelum diorder!</h2>
+            </div>
+            <div class="popup__list">
+                <div class="list1">
+                    <img src="img/Arabic.png">
+                    <div class="detail">
+                        <h1>Tenderloin Steak</h1>
+                        <p>Rp. 155.000</p>
+                    </div>
+                    <div class="btn_input">
+                        <button class="pluss">+</button>
+                        <input type="text" id="counter" class="counter" value="1">
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="list1">
+                    <img src="img/Gamis-1.jfif">
+                    <div class="detail">
+                        <h1>Grey and Blue Gamis</h1>
+                        <p>Rp. 32.000</p>
+                    </div>
+                    <div class="btn_input">
+                        <button class="pluss">+</button>
+                        <input type="text" id="counter" class="counter" value="1">
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="list1">
+                    <img src="img/Arabic.png">
+                    <div class="detail">
+                        <h1>Tenderloin Steak</h1>
+                        <p>Rp. 155.000</p>
+                    </div>
+                    <div class="btn_input">
+                        <button class="pluss">+</button>
+                        <input type="text" id="counter" class="counter" value="1">
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="total">
+                    <h1>Rp. 465.000</h1>
+                    <p>3</p>
+                </div>
+            </div>
+            <a href="Login Page.html" class="popup__btn">Checkout</a>
         </div>
     </div>
     

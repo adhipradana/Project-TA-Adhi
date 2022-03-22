@@ -1,0 +1,281 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layar-dalam {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.layar-penuh {
+    width: 100%;
+}
+
+section {
+    margin: 50px auto;
+    display: absolute;
+    margin-bottom: 20px;
+}
+
+/* NAVIGASI */
+
+nav {
+    z-index: 100;
+    text-align: center;
+    position: fixed;
+    position: -webkit-sticky;
+    line-height: 80px;
+    width: 100%;
+    top: 0px;
+    margin: auto;
+    display: flex;
+    background: #4BC2AF;
+}
+
+.logo img {
+    width: 5%;
+    float: left;
+    margin: 15px 20px;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 800;
+    float: left;
+    font-family: corier;
+    color: #213E3B;
+    text-decoration: none;
+}
+
+.menu {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li:hover ul {
+    display: inline-block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background: linear-gradient(grey, white);
+    top: 60px;
+    right: 175px;
+    width: 10%;
+    line-height: 50px;
+    border-radius: 0px 20px 0px 20px;
+}
+
+nav ul ul li a {
+    color: #213E3B;
+}
+
+a.tbl-biru {
+    background: #213E3B;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: #FB7813;
+    text-decoration: none;
+}
+
+/*pengaturan header */
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+header .image-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+
+header .image-2 {
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+
+header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    top: 38%;
+    margin-left: 150px;
+}
+
+header .intro h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    padding: 0;
+    flex-wrap: wrap;
+    color: orange;
+}
+
+header .intro h2 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.tombol {
+    background-color: #FB7813;
+    height: 40px;
+    width: 410px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tombol:hover {
+    background: #213E3B;
+    text-decoration: none;
+}
+
+/* Konten */
+#invest {
+    display: flex;
+    justify-content: center;
+    gap: 4.0rem;
+}
+
+#invest img {
+    width: 50%;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 70px;
+}
+
+.kolom h1 {
+    margin-bottom: 15px;
+    font-family: 'comic sans ms';
+    text-transform: uppercase;
+}
+
+.kolom .deskripsi {
+    width: 85%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #213E3B;
+}
+
+.kolom p:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.kolom a {
+    padding: 10px;
+    background-color: orange;
+    margin-top: 50px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.kolom a:hover {
+    background: #213E3B;
+}
+
+/*Pengaturan Contact*/
+#contact {
+    background: linear-gradient(white, grey);
+    padding: 50px 0px 20px 0px;
+    margin-top: 30px;
+}
+
+.footer {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #213E3B;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    background: linear-gradient(grey, white);
+}
